@@ -1,14 +1,16 @@
-import * as React from "react"
-
-export default class Main extends React.Component {
+import * as React from "react";
+interface IProps {
+  children: React.ReactHTML;
+}
+export default class Main extends React.Component<IProps> {
   public render() {
-    const {children} = this.props
-    console.log(this.props)
+    const { children } = this.props;
+    console.log(this.props);
     return (
       <div className="main">
         main
-      {children}
+        {children}
       </div>
-    )
+    );
   }
 }
