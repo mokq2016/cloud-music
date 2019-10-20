@@ -1,26 +1,56 @@
 import React, { SFC } from "react";
-
+import { Link } from "react-router-dom";
 import "./index.scss";
 
 // interface Prop = {}
-
-const Footer: SFC = () => {
+interface IProps {
+  pathname: string;
+}
+const Footer: SFC<IProps> = props => {
+  const { pathname } = props;
   return (
-    <div className="footer_tabs">
-      <div className="footer_tabs-item">
-        <span>发现</span>
+    <div className="main-footer_tabs">
+      <div
+        className={
+          ["/main/home"].includes(pathname)
+            ? "main-footer_tabs-item actived"
+            : "main-footer_tabs-item"
+        }
+      >
+        <Link to="/main/home">
+          <i className="iconfont iconfaxianweixuanzhong" />
+          <span className="tabs-item_span">发现</span>
+        </Link>
       </div>
-      <div className="footer_tabs-item">
-        <span>视频</span>
+      <div className="main-footer_tabs-item">
+        <Link to="/main/home">
+          <i className="iconfont iconshipin" />
+          <span className="tabs-item_span">视频</span>
+        </Link>
       </div>
-      <div className="footer_tabs-item">
-        <span>我的</span>
+      <div
+        className={
+          ["/main/find"].includes(pathname)
+            ? "main-footer_tabs-item actived"
+            : "main-footer_tabs-item"
+        }
+      >
+        <Link to="/main/find">
+          <i className="iconfont iconyinyue" />
+          <span className="tabs-item_span">我的</span>
+        </Link>
       </div>
-      <div className="footer_tabs-item">
-        <span>云村</span>
+      <div className="main-footer_tabs-item">
+        <Link to="/main/home">
+          <i className="iconfont iconqunzuduoren" />
+          <span className="tabs-item_span">云村</span>
+        </Link>
       </div>
-      <div className="footer_tabs-item">
-        <span>账号</span>
+      <div className="main-footer_tabs-item">
+        <Link to="/main/home">
+          <i className="iconfont iconzhanghao" />
+          <span className="tabs-item_span">账号</span>
+        </Link>
       </div>
     </div>
   );
