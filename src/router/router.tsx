@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as Loadable from "react-loadable";
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import App from "../App";
 // import Main2 from "../pages/Main/Main";
 const Main = Loadable({
@@ -33,49 +33,35 @@ const routes: any[] = [
         ]
       },
       {
-        component: () => import("../components/Find/Find"),
+        exact: true,
+        component: Find,
         path: "/main/find"
       }
     ]
+  },
+  {
+    exact: true,
+    component: Find,
+    path: "/test"
   }
 ];
 const renderRoutes = (routers: any) =>
   routers.map((item: any, index: number) => (
-    <div key={item.path}>
-      {item.routes ? (
-        <item.component>{renderRoutes(item.routes)}</item.component>
-      ) : (
-        <Route
-          path={item.path}
-          component={item.component}
-          exact={item.exact}
-          key={item.path}
-        >
+    <Route
+      path={item.path}
+      exact={item.exact}
+      key={item.path}
+      render={props => (
+        <item.component {...props}>
           {item.routes && renderRoutes(item.routes)}
-        </Route>
+        </item.component>
       )}
-    </div>
+    />
   ));
-// function RouteWithSubRoutes(route: any) {
-//   return (
-//     <Route
-//       path={route.path}
-//       render={props => (
-//         // pass the sub-routes down to keep nesting
-//         <route.component {...props} routes={route.routes} />
-//       )}
-//     />
-//   );
-// }
 const RouterMap = () => (
   <HashRouter>
     <App>
-      {/* <Switch>
-        {routes.map(router => {
-          RouteWithSubRoutes(router);
-        })}
-      </Switch> */}
-      {renderRoutes(routes)}
+      <Switch>{renderRoutes(routes)}</Switch>
     </App>
   </HashRouter>
 );
