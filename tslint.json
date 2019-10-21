@@ -8,9 +8,12 @@
     ]
   },
   "rules": {
-    "jsx-no-lambda":false,
+    "jsx-no-lambda": false,
     "no-console": false,
-    "ordered-imports":false,
-    "object-literal-sort-keys": false
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-unused-expression": false,
+    "resolveJsonModule": true,
+    "no-var-requires": false
   }
 }

@@ -7,12 +7,24 @@ const Main = Loadable({
   loader: () => import("../pages/Main/Main"),
   loading: () => null
 });
-const Home = Loadable({
-  loader: () => import("../components/Home/Home"),
-  loading: () => null
-});
 const Find = Loadable({
   loader: () => import("../components/Find/Find"),
+  loading: () => null
+});
+const Video = Loadable({
+  loader: () => import("../components/Video/Video"),
+  loading: () => null
+});
+const MyMusic = Loadable({
+  loader: () => import("../components/MyMusic/MyMusic"),
+  loading: () => null
+});
+const Group = Loadable({
+  loader: () => import("../components/Group/Group"),
+  loading: () => null
+});
+const Account = Loadable({
+  loader: () => import("../components/Account/Account"),
   loading: () => null
 });
 const routes: any[] = [
@@ -22,27 +34,31 @@ const routes: any[] = [
     exact: false,
     routes: [
       {
-        component: Home,
-        path: "/main/home",
-        exact: false,
-        routes: [
-          {
-            component: Find,
-            path: "/main/home/1"
-          }
-        ]
+        component: Find,
+        path: "/main/find",
+        exact: true
       },
       {
         exact: true,
-        component: Find,
-        path: "/main/find"
+        component: Video,
+        path: "/main/video"
+      },
+      {
+        exact: true,
+        component: MyMusic,
+        path: "/main/mymusic"
+      },
+      {
+        exact: true,
+        component: Group,
+        path: "/main/group"
+      },
+      {
+        exact: true,
+        component: Account,
+        path: "/main/account"
       }
     ]
-  },
-  {
-    exact: true,
-    component: Find,
-    path: "/test"
   }
 ];
 const renderRoutes = (routers: any) =>

@@ -1,11 +1,11 @@
 import * as React from "react";
 
-export default class Home extends React.Component {
+export default class Account extends React.Component {
   public render() {
     const { children } = this.props;
     return (
       <div>
-        home
+        账号
         {children}
       </div>
     );
