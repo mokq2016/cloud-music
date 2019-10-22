@@ -1,0 +1,85 @@
+{
+  "hasTaste": false,
+  "code": 200,
+  "category": 0,
+  "result": [
+    {
+      "id": 924680166,
+      "type": 0,
+      "name": "[华语速爆新歌] 最新华语音乐推荐",
+      "copywriter": "编辑推荐： 优质华语新歌，每周二精选推荐",
+      "picUrl": "https://p2.music.126.net/Q2LB4BVduZ9URmeVPVPCGQ==/109951164440654266.jpg",
+      "canDislike": false,
+      "trackNumberUpdateTime": 1571673600000,
+      "playCount": 627404540,
+      "trackCount": 20,
+      "highQuality": false,
+      "alg": "featured"
+    },
+    {
+      "id": 2981608648,
+      "type": 0,
+      "name": "愿你喜欢的人 乘着梦来见你",
+      "copywriter": "编辑推荐：愿你喜欢的人，乘着梦来见你",
+      "picUrl": "https://p2.music.126.net/djAx49xvCe5nXj0TL8sQGQ==/109951164427147455.jpg",
+      "canDislike": false,
+      "trackNumberUpdateTime": 1571734590071,
+      "playCount": 1800450,
+      "trackCount": 51,
+      "highQuality": false,
+      "alg": "featured"
+    },
+    {
+      "id": 988690134,
+      "type": 0,
+      "name": "经典老歌，久听不厌",
+      "copywriter": "热门推荐",
+      "picUrl": "https://p2.music.126.net/VFd5cboNTbnYsWZ5DBn9bg==/18953381440004340.jpg",
+      "canDislike": true,
+      "trackNumberUpdateTime": 1545886648012,
+      "playCount": 130482496,
+      "trackCount": 115,
+      "highQuality": true,
+      "alg": "cityLevel_unknow"
+    },
+    {
+      "id": 2885665791,
+      "type": 0,
+      "name": "世界它太小，小到容不下爱人的心",
+      "copywriter": "热门推荐",
+      "picUrl": "https://p2.music.126.net/RGcMp9gwLgnGUxknr3GWkA==/109951164216872799.jpg",
+      "canDislike": true,
+      "trackNumberUpdateTime": 1571097905383,
+      "playCount": 2486031,
+      "trackCount": 35,
+      "highQuality": false,
+      "alg": "cityLevel_unknow"
+    },
+    {
+      "id": 575168245,
+      "type": 0,
+      "name": "网络流行歌曲2019♡",
+      "copywriter": "热门推荐",
+      "picUrl": "https://p2.music.126.net/aJLxFYEy8NHyZZM92nUOSg==/109951163919639197.jpg",
+      "canDislike": true,
+      "trackNumberUpdateTime": 1571309742160,
+      "playCount": 43533456,
+      "trackCount": 520,
+      "highQuality": false,
+      "alg": "cityLevel_unknow"
+    },
+    {
+      "id": 75182300,
+      "type": 0,
+      "name": "评论过万的英文歌与潜力股",
+      "copywriter": "热门推荐",
+      "picUrl": "https://p2.music.126.net/gzsxh-u0mN_OtdrjpbfI8w==/7842816441775262.jpg",
+      "canDislike": true,
+      "trackNumberUpdateTime": 1468379766955,
+      "playCount": 84090864,
+      "trackCount": 112,
+      "highQuality": true,
+      "alg": "cityLevel_unknow"
+    }
+  ]
+}

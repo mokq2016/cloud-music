@@ -7,10 +7,8 @@ interface IProps {
 export default class Main extends React.Component<IProps> {
   public render() {
     const { children, location } = this.props;
-    console.log(this.props);
     return (
       <div className="main">
-        main
         {children}
         <Footer {...location} />
       </div>

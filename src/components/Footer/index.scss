@@ -4,10 +4,12 @@
   position: fixed;
   width: 100%;
   bottom: 0;
-  padding: 8px 0 2px 0;
-  background: rgba($color: #eee, $alpha: 0.3);
+  padding: 0 0 2px 0;
+  background: rgb(248, 246, 246);
+  height: 50px;
 }
 .main-footer_tabs-item {
+  align-self: flex-end;
   .iconfont {
     color: #999;
     padding: 6px;
@@ -29,6 +31,6 @@
 .tabs-item_span {
   font-size: 12px;
   display: block;
-  margin-top: 5px;
+  margin-top: 8px;
   color: #999;
 }
