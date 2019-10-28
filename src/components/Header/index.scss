@@ -1,0 +1,31 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+  line-height: 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+}
+.header_input {
+  flex: 1;
+  margin: 0 16px;
+  background: #eee;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #999;
+}
+::-webkit-input-placeholder {
+  color: red;
+} /* 使用webkit内核的浏览器 */
+:-moz-placeholder {
+  color: red;
+} /* Firefox版本4-18 */
+::-moz-placeholder {
+  color: red;
+} /* Firefox版本19+ */
+:-ms-input-placeholder {
+  color: red;
+}

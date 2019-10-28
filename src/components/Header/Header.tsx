@@ -1,13 +1,12 @@
-import React from 'react'
-
-interface Props {
-  
+import React, { SFC } from "react";
+import "./index.scss";
+interface IProp {
+  children: JSX.Element[];
 }
 
-export default function Header(): Props {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Header: SFC<IProp> = props => {
+  const { children } = props;
+  return <div className="header_container">{children}</div>;
+};
+
+export default Header;

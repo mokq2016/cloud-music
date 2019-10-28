@@ -206,3 +206,7 @@ input,
 select {
   vertical-align: middle;
 }
+
+.page-container {
+  padding-top: 40px;
+}

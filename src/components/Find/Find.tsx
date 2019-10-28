@@ -1,6 +1,7 @@
 import * as React from "react";
 import Swiper from "swiper";
 import "./index.scss";
+import Header from "../Header/Header";
 export default class Find extends React.Component {
   public componentDidMount() {
     new Swiper(".swiper-container", {
@@ -38,6 +39,11 @@ export default class Find extends React.Component {
     ];
     return (
       <div className="page-container">
+        <Header>
+          <i className="iconfont iconmaikefeng" />
+          <div className="header_input">输入框</div>
+          <i className="iconfont iconyinletiaodongzhuangtai_huaban" />
+        </Header>
         <div className="swiper-container">
           <section className="swiper-wrapper">
             {data.banners.map((item: any, index: number) => (
