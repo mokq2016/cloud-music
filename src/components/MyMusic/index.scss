@@ -31,3 +31,48 @@
     font-size: 24px;
   }
 }
+.types-container {
+  .type-item {
+    line-height: 58px;
+    padding-right: 22px;
+    margin-left: 60px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+  }
+  .type-item:last-child {
+    border: none;
+  }
+  .item-desc {
+    font-size: 14px;
+    color: #999;
+  }
+  .iconfont {
+    position: absolute;
+    left: -40px;
+    font-size: 26px;
+  }
+  .cell-link:after {
+    content: "";
+    right: 12px;
+  }
+}
+.bg-dom {
+  background: #f8f6f6;
+  height: 10px;
+}
+.song-sheets {
+  padding: 10px 10px;
+  line-height: 40px;
+  .song-item {
+    display: flex;
+    justify-content: space-between;
+    .sheet-name {
+      font-size: 20px;
+      font-weight: 600;
+      .iconfont {
+        font-size: 22px;
+      }
+    }
+  }
+}
