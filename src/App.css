@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   -webkit-overflow-scrolling: touch;
 }
 
@@ -205,6 +205,8 @@ hr {
 input,
 select {
   vertical-align: middle;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .page-container {

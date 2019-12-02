@@ -20,15 +20,17 @@
   font-size: 14px;
   color: #999;
 }
-::-webkit-input-placeholder {
+
+
+/* ::-webkit-input-placeholder {
   color: red;
-} /* 使用webkit内核的浏览器 */
+} 
 :-moz-placeholder {
   color: red;
-} /* Firefox版本4-18 */
+
 ::-moz-placeholder {
   color: red;
-} /* Firefox版本19+ */
+} 
 :-ms-input-placeholder {
   color: red;
-}
+} */

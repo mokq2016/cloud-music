@@ -27,6 +27,10 @@ const Account = Loadable({
   loader: () => import("../components/Account/Account"),
   loading: () => null
 });
+const Login = Loadable({
+  loader: () => import("../pages/Login/Login"),
+  loading: () => null
+});
 const routes: any[] = [
   {
     component: Main,
@@ -59,6 +63,11 @@ const routes: any[] = [
         path: "/main/account"
       }
     ]
+  },
+  {
+    component:Login,
+    path:"/login",
+    exact:false
   }
 ];
 const renderRoutes = (routers: any) =>

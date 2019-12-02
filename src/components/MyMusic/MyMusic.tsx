@@ -108,7 +108,7 @@ function SongSheet(props: any) {
     <div className="song-item">
       <div className="sheet-name">
         <i className="iconfont iconicon_left_arrow" />
-        <span>{props.title}</span>
+        <span className='sheet-title'>{props.title}</span>
       </div>
       {getIcon(props.hasAdd)}
     </div>

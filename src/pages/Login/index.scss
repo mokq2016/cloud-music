@@ -1,0 +1,35 @@
+.login-page{ 
+  .page-content{
+    padding: 40px 10px 0;
+    margin-top: 44px;
+    
+    .tips{
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+    input{
+      border: none;
+      flex: 1;  
+      font-size: 16px;
+    }
+  }
+  .login-form_item{
+    line-height: 36px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    
+    &-title{
+      display: inline-block;
+      width: 100px;
+    }
+  }
+  .footer-btn{
+    margin: 30px 10px 0;
+    text-align: center;
+    background: linear-gradient(to right, #ff5a4c, #ff1d11);
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+  }
+}
