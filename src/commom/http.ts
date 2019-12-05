@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-12-02 17:21:39
- * @LastEditTime: 2019-12-02 18:23:58
+ * @LastEditTime: 2019-12-05 17:33:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \workPlace_react-music\cloud-music\src\utils\http.ts
@@ -26,7 +26,7 @@ axios.interceptors.request.use(function (config) {
 // tslint:disable-next-line: only-arrow-functions
 axios.interceptors.response.use(function (response) {
   // Do something with response data
-  return response;
+  return response.data;
 // tslint:disable-next-line: only-arrow-functions
 }, function (error) {
   // Do something with response error
