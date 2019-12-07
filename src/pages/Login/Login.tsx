@@ -3,11 +3,19 @@ import Header from "../../components/Header/Header";
 import "./index.scss";
 import { login } from "../../commom/api";
 // import { FormEvent } from 'react';
+import { loginAction } from "../../store/actions/actions";
+import { connect } from "react-redux";
+import { Dispatch } from 'redux';
+
 interface IState {
   mobile: string,
   password: string
 }
-export default class Login extends React.Component<{}, IState> {
+interface IProps{
+  dispatch:Dispatch,
+  history:any
+}
+class Login extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
     this.state = {
@@ -22,6 +30,7 @@ export default class Login extends React.Component<{}, IState> {
         <Header>
           <i className="iconfont iconchangyongtubiao-xianxingdaochu-zhuanqu-" />
           <div className="header_title">手机号登录</div>
+          <i/>
         </Header>
         <main className='page-content'>
           <header className='tips'>
@@ -63,8 +72,18 @@ export default class Login extends React.Component<{}, IState> {
     if (!this.valite()) {
       return
     }
+    const {dispatch,history} = this.props;
+    console.log(this.props)
     login(this.state.mobile, this.state.password).then(res => {
+      dispatch(loginAction(res))
+      history.push({
+        pathname:'/main/find'
+      })
       console.log(res)
     })
   }
 }
+/* const mapStateToProps = (dispatch: any) => {
+  return { dispatch }
+} */
+export default connect()(Login)

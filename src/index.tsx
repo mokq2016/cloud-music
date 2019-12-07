@@ -4,8 +4,13 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 /* import App from './App' */
 import RouterMap from "./router/router";
+import {Provider} from 'react-redux'
+import storeConfig from "./store/store";
+const store = storeConfig()
 ReactDOM.render(
-  <RouterMap/>,
+  <Provider store={store}>
+    <RouterMap/>
+  </Provider>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
